@@ -3,7 +3,7 @@ wmr_hidprobe.c Oregon Scientific WMR100 reader using hiddev
 
 $gcc -O3 -Wall -o wmr_hidprobe wmr_hidprobe.c
 
-walkure@kmc.gr.jp
+walkure at kmc.gr.jp
 */
 
 #include <stdio.h>

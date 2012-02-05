@@ -1,0 +1,30 @@
+wmr_hidprobe
+
+*about
+Oregon Scientific WMR100 reader using hiddev.
+But tested only RMS300A.
+
+*build
+$gcc -O3 -Wall -o wmr_hidprobe wmr_hidprobe.c
+
+*using 
+% ./wmr_hidprobe -d
+...
+% telnet localhost 13254
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+HTTP/1.0 200 OK
+Content-Type: text/plain
+
+time,1328413500
+sensor,0,21.1,45
+sensor,1,7.9,38
+Connection closed by foreign host.
+%
+
+*license
+MIT License
+
+*author
+walkure at kmc.gr.jp
